@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Splitter | B9Lab First Project</title>
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+  </style>
+  <body>
+    <h1>Splitter | B9Lab First Project</h1>
+    <p id="status"></p>
+
+    <label for="contractAccount">Contract Account:</label> <input type="text" id="ca" size=100/>
+    <label for="sendEther">Send Ether:</label> <input type="text" id="se"/> <button onclick="App.sendCoin()">Send Ether to Bob and Carol</button>
+    <br> <br>
+    <label for="AliceAccount">Alice:</label> <input type="text" id="alice" size=100/>
+    <label for="AliceBalance">Alice's Account Balanace (ETH):</label> <input type="text" id="alb" />
+
+    <label for="BobAccount">Bob :</label> <input type="text" id="bob" size=100 value="0xb2bf894ad6c6baa374c8249c9d3662534b1d51ac"/>
+    <label for="BobAccountBalance">Bob's Account Balanace (ETH):</label> <input type="text" id="blb" />
+
+    <label for="contractAccount">Carol:</label> <input type="text" id="carol" size=100 value="0x2073d9c9512956ce5ca6890b497ea50d67f1a0b0"/>
+    <label for="CarolAccountBalance">Carol's Account Balanace (ETH):</label> <input type="text" id="clb" />
+
+    <script src="index.js"></script>
+  </body>
+</html>
